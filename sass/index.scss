@@ -1,3 +1,4 @@
+@import'function';
 html{
   background: #282828 ;
   text-align: center;
@@ -52,4 +53,26 @@ html{
   background: #1df52f;
   z-index: 0;
   left: 49%;
+}
+
+
+.outer-clock-face .marking {
+  background: #bdbdcb;
+  width: 3px;
+}
+
+.outer-clock-face .marking.marking-one {
+  @include transform(rotate(30deg)) ;
+}
+
+.outer-clock-face .marking.marking-two {
+  @include transform(rotate(60deg)) ;
+}
+
+.outer-clock-face .marking.marking-three {
+  @include transform(rotate(120deg)) ;
+}
+
+.outer-clock-face .marking.marking-four {
+  @include transform(rotate(150deg)) ;
 }
