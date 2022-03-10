@@ -76,3 +76,29 @@ html{
 .outer-clock-face .marking.marking-four {
   @include transform(rotate(150deg)) ;
 }
+
+
+.inner-clock-face {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  background: #282828;
+  @include border-radius(rotate(100%)) ;
+  z-index: 1;
+}
+
+.inner-clock-face::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  border-radius: 18px;
+  margin-left: -9px;
+  margin-top: -6px;
+  background: #4d4b63;
+  z-index: 11;
+}
