@@ -1,27 +1,17 @@
-html {
-  background: #282828;
-  text-align: center;
-  font-size: 10px;
-}
+/* Error: Undefined mixin.
+ *    ,
+ * 41 |   @include transform(rotate(90deg)) ;
+ *    |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   sass\index.scss 41:3  root stylesheet */
 
-body {
-  margin: 0;
-  font-size: 2rem;
-  display: flex;
-  flex: 1;
-  min-height: 100vh;
-  align-items: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 41 \2502    @include transform(rotate(90deg)) ;\d\a    \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\index.scss 41:3  root stylesheet";
 }
-
-.clock {
-  width: 30rem;
-  height: 30rem;
-  position: relative;
-  padding: 2rem;
-  border: 7px solid #282828;
-  box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.5), inset -4px -4px 10px rgba(67, 67, 67, 0.5), 4px 4px 10px rgba(0, 0, 0, 0.3);
-  border-radius: 50%;
-  margin: 50px auto;
-}
-
-/*# sourceMappingURL=index.css.map */
