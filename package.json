@@ -1,0 +1,17 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "run": "^1.4.0",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch sass/index.scss css/index.css",
+    "start": "node index.js "
+  },
+  "author": "fatemeh",
+  "license": "ISC"
+}
